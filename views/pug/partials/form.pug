@@ -1,0 +1,16 @@
+h1(class="title") Formulario
+fieldset(class="form")
+  legend(class="form__title") Ingresar los datos aquí:
+  form(action="/productos", method="post", class="form__container")
+    section(class="input")
+      label(for="nombre", class="input__title") Nombre:
+      input(type="text", name="nombre", id="nombre", class="input__box")
+    section(class="input")
+      label(for="precio", class="input__title") Precio:
+      input(type="number", name="precio", id="precio", class="input__box")
+    section(class="input")
+      label(for="foto", class="input__title") Foto:
+      input(type="text", name="foto", id="foto", class="input__box")
+    input(type="submit", value="enviar", class="input__submit")
+p(class="text") Mira los productos 
+  a(href="/productos", class="link") Aqui

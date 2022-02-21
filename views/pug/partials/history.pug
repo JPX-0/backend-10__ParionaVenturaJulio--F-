@@ -1,0 +1,20 @@
+h1(class="title") Productos
+p(class="text") ¿Quieres agregar un nuevo producto?, da click 
+  a(href="/" class="link") Aqui
+if products.length > 0
+  table(class="table")
+    thead
+      tr(class="table__header")
+        th Nombre
+        th Precio
+        th Foto
+    tbody
+      each product in products
+        tr(class="table__main")
+          td=product.nombre
+          td=product.precio
+          td
+            picture(class="table__main-img")
+              img(src=product.foto alt=product.nombre)
+else
+  h3(class="table__none") No hay productos

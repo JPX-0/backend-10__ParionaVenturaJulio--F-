@@ -1,0 +1,20 @@
+<h1 class="title">Formulario</h1>
+<fieldset class="form">
+  <legend class="form__title">Ingresar los datos aquí:</legend>
+  <form action="/productos" method="post" class="form__container">
+    <section class="input">
+      <label for="nombre" class="input__title">Nombre:</label>
+      <input type="text" name="nombre" id="nombre" class="input__box">
+    </section>
+    <section class="input">
+      <label for="precio" class="input__title">Precio:</label>
+      <input type="number" name="precio" id="precio" class="input__box">
+    </section>
+    <section class="input">
+      <label for="foto" class="input__title">Foto:</label>
+      <input type="text" name="foto" id="foto" class="input__box">
+    </section>
+    <input type="submit" value="enviar" class="input__submit">
+  </form>
+</fieldset>
+<p class="text">Mira los productos <a href="/productos" class="link">Aqui</a></p>
